@@ -19,5 +19,5 @@ function Head() {
 
 ReactDOM.render(
   <Head />,
-  document.getElementById("root")
+  document.getElementById("head")
 );
