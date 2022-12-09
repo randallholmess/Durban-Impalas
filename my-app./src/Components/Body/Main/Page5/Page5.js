@@ -1,6 +1,7 @@
 import React from "react";
 import "src/index.css";
 import ReactDOM from 'react-dom';
+import "src/addtocart.js"
 
 
 function Item1() {
@@ -18,7 +19,7 @@ function Item1() {
                 </select>
             </section>
             <label htmlFor="add to cart" name="add to cart">add to cart:</label>
-             <button onclick= "addtocart(item1)" style="background-color: white;">Send</button>
+             <button onclick= {addtocart(item1)} style="background-color: white;">Send</button>
         </section>
     )
 }
@@ -38,7 +39,7 @@ function Item2() {
                 </select>
             </section>
             <label htmlFor="add to cart" name="add to cart">add to cart:</label>
-            <button onclick= "addtocart(item2)" type="submit" class="btn" style="background-color: white;">Send</button>
+            <button onclick= {addtocart(item2)} type="submit" className="btn" style="background-color: white;">Send</button>
         </section>
     )
 }
@@ -46,7 +47,7 @@ function Item2() {
 function Item3() {
     return (
         <section className="contentcard" id ="item3">
-            <h3 className = "carttitle" style="background-color:white  ;color:black;" className="Cardtitle">Pink T-Shirt</h3>
+            <h3 style="background-color:white  ;color:black;" className="Cardtitle">Pink T-Shirt</h3>
             <img src="Photos/Media Content/Shop/tshirt 2.webp" width="100%" height="100%" alt="icon for row" />
             <section class="orderplacing" style="color: black;background-color: white;"> 
                 <label htmlFor="cars">SIZE:</label>
@@ -58,7 +59,7 @@ function Item3() {
                 </select>
             </section>
             <label htmlFor="add to cart" name="add to cart">add to cart:</label>
-            <button onclick="addtocart(item3)" type="submit" className="btn" style="background-color: white;">Send</button>
+            <button onclick={addtocart(item3)} type="submit" className="btn" style="background-color: white;">Send</button>
         </section>
     )
 }
@@ -75,7 +76,7 @@ function Page5() {
                 <Item3 />
             </section>
             <h2 style="text-align: center;background-color: white;">Cart</h2>
-            <div class="cart" id="cart">
+            <div className="cart" id="cart">
                 <div id="Cardtitle"></div>
             </div>
         </section>
