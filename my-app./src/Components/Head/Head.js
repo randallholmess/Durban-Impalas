@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import "/Users/randallholmes/Durban-Impalas/my-app./src/index.css";
 // import ImpalasLogo from 'Durban-Impalas/Images/';
 
 function Head() {

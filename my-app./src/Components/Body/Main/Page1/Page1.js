@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import "/Users/randallholmes/Durban-Impalas/my-app./src/index.css";
 
 
 function ContactSection1() {
@@ -72,4 +72,6 @@ function AboutUSS() {
     )
   }
   
-  ReactDOM.render(<Page1 />, document.getElementById("root"))
+  // ReactDOM.render(<Page1 />, document.getElementById("root"))
+
+  export default Page1;

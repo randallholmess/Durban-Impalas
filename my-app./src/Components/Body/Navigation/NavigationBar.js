@@ -1,5 +1,5 @@
 import React from "react";
-import "src/index.css";
+import "/Users/randallholmes/Durban-Impalas/my-app./src/index.css";
 import ReactDOM from 'react-dom';
 
 
@@ -20,7 +20,9 @@ function NavigationBar() {
     )
   }
 
-  ReactDOM.render(
-    <NavigationBar />,
-    document.getElementById("root")
-);
+//   ReactDOM.render(
+//     <NavigationBar />,
+//     document.getElementById("root")
+// );
+
+export default NavigationBar;

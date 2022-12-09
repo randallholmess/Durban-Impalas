@@ -1,5 +1,5 @@
 import React from "react";
-import "src/index.css";
+import "/Users/randallholmes/Durban-Impalas/my-app./src/index.css";
 import ReactDOM from 'react-dom';
 
 
@@ -103,4 +103,7 @@ function Page4() {
         </section>
         )
     }
-ReactDOM.render(<Page4 />,document.getElementById("root"))
+
+// ReactDOM.render(<Page4 />,document.getElementById("root"))
+
+export default Page4;

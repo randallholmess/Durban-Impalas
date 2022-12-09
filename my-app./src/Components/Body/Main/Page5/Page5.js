@@ -1,7 +1,7 @@
 import React from "react";
-import "src/index.css";
+import "/Users/randallholmes/Durban-Impalas/my-app./src/index.css";
 import ReactDOM from 'react-dom';
-import "src/addtocart.js"
+import "/Users/randallholmes/Durban-Impalas/my-app./src/addtocart.js"
 
 
 function Item1() {
@@ -84,4 +84,6 @@ function Page5() {
     )
 }
 
-ReactDOM.render(<Page5 />,document.getElementById("root"))
+// ReactDOM.render(<Page5 />,document.getElementById("root"))
+
+export default Page5;

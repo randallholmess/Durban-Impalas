@@ -1,5 +1,5 @@
 import React from "react";
-import "src/index.css";
+import "/Users/randallholmes/Durban-Impalas/my-app./src/index.css";
 import ReactDOM from 'react-dom';
 
 
@@ -21,4 +21,6 @@ function Page2() {
     )
 }
 
-ReactDOM.render(<Page2 />,document.getElementById("root"))
+// ReactDOM.render(<Page2 />,document.getElementById("root"))
+
+export default Page2;
