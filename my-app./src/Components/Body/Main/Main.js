@@ -1,6 +1,6 @@
 import React from "react";
 import "/Users/randallholmes/Durban-Impalas/my-app./src/index.css";
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import Page1 from "./Page1/Page1";
 import Page2 from "./Page2/Page2";
 import Page3 from "./Page3/Page3";

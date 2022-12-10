@@ -1,6 +1,6 @@
 import React from "react";
 import "/Users/randallholmes/Durban-Impalas/my-app./src/index.css";
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 
 
 

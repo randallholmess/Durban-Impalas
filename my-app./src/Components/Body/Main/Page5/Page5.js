@@ -1,7 +1,7 @@
 import React from "react";
 import "/Users/randallholmes/Durban-Impalas/my-app./src/index.css";
 import ReactDOM from 'react-dom';
-import "/Users/randallholmes/Durban-Impalas/my-app./src/addtocart.js"
+import addtocart from "/Users/randallholmes/Durban-Impalas/my-app./src/addtocart.js"
 
 
 function Item1() {
@@ -19,7 +19,7 @@ function Item1() {
                 </select>
             </section>
             <label htmlFor="add to cart" name="add to cart">add to cart:</label>
-             <button onclick= {addtocart(item1)} style="background-color: white;">Send</button>
+             <button onclick= {addtocart} id="item1" style="background-color: white;">Send</button>
         </section>
     )
 }
@@ -39,7 +39,7 @@ function Item2() {
                 </select>
             </section>
             <label htmlFor="add to cart" name="add to cart">add to cart:</label>
-            <button onclick= {addtocart(item2)} type="submit" className="btn" style="background-color: white;">Send</button>
+            <button onclick= {addtocart} id="item2" type="submit" className="btn" style="background-color: white;">Send</button>
         </section>
     )
 }
@@ -59,7 +59,7 @@ function Item3() {
                 </select>
             </section>
             <label htmlFor="add to cart" name="add to cart">add to cart:</label>
-            <button onclick={addtocart(item3)} type="submit" className="btn" style="background-color: white;">Send</button>
+            <button onclick={addtocart} id="item3" type="submit" className="btn" style="background-color: white;">Send</button>
         </section>
     )
 }

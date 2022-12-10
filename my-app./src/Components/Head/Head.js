@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import "/Users/randallholmes/Durban-Impalas/my-app./src/index.css";
 // import ImpalasLogo from 'Durban-Impalas/Images/';
 
@@ -12,7 +12,7 @@ function Head() {
         <meta name="Keywords" content = "Rugby, Sports, Marketplace" />
         <meta name="Author" content="Randall Holmes" />
         <link rel="stylesheet" type="text/css" href="index.css" />
-        <script type="text/javascript" src="index.js"></script>
+        <script type="text/javascript" src="/Users/randallholmes/Durban-Impalas/my-app./src/index.js"></script>
     </head>
   )
  }
