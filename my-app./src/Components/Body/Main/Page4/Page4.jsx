@@ -1,62 +1,67 @@
 import React from "react";
 import "/Users/randallholmes/Durban-Impalas/my-app./src/index.css";
-import ReactDOM from 'react-dom/client';
+import Logo from "/Users/randallholmes/Durban-Impalas/my-app./src/Images/logos/Durban_Impalas.png"
+import AllanBaxter from "/Users/randallholmes/Durban-Impalas/my-app./src/Images/Media Content/Players/Allan Baxter.jpeg"
+import BlakeEnever from "/Users/randallholmes/Durban-Impalas/my-app./src/Images/Media Content/Players/Blake Enever.jpeg"
+import MurrayDuglas from "/Users/randallholmes/Durban-Impalas/my-app./src/Images/Media Content/Players/Murray Duglas.jpeg"
+import TomBanks from "/Users/randallholmes/Durban-Impalas/my-app./src/Images/Media Content/Players/Tom Banks.jpeg"
+import PretoriaEagles from "/Users/randallholmes/Durban-Impalas/my-app./src/Images/logos/Pretoria Eagles.png";
 
 
 function Section1() {
     return (
         <section className = "section1">
-            <h1 style="color: #E5DFB7">Player Statistics</h1>
+            <h1 style={{color: "#E5DFB7"}}>Player Statistics</h1>
             <table>
                 <tr>
                     <td colspan="1">
-                        <img src="Photos/logos/Durban_Impalas.png" width="50" height="70" alt="icon for row" />
+                        <img src={Logo} width="50" height="70" alt="icon for row" />
                     </td>
                     <td colspan="5">Durban Impalas</td>
                 </tr>
                 <tr>
-                    <td><img src="Photos/Media Content/Players/Allan Baxter.jpeg" width="70" height="50" alt="icon for row" /></td>
+                    <td><img src={AllanBaxter} width="70" height="50" alt="icon for row" /></td>
                     <td colspan="3">Allan  Baxter</td>
                     <td>Total Tries</td>
                     <td>14</td>
                 </tr>
                 <tr>
-                    <td><img src="Photos/Media Content/Players/Blake Enever.jpeg" width="70" height="50" alt="icon for row" /></td>
+                    <td><img src={BlakeEnever} width="70" height="50" alt="icon for row" /></td>
                     <td colspan="3">Blake Enever</td>
                     <td>Tackles Per Game</td>
                     <td>8.8</td>
                 </tr>
                 <tr>
-                    <td><img src="Photos/Media Content/Players/Murray Duglas.jpeg" width="70" height="50" alt="icon for row" /></td>
+                    <td><img src={MurrayDuglas} width="70" height="50" alt="icon for row" /></td>
                     <td colspan="3">Murray Duglas</td>
                     <td>Runs</td>
                     <td>130M</td>
                 </tr>
                 <tr>
-                    <td><img src="Photos/Media Content/Players/Tom Banks.jpeg" width="70" height="50" alt="icon for row" /></td>
+                    <td><img src={TomBanks} width="70" height="50" alt="icon for row" /></td>
                     <td colspan="3">Tom Banks</td>
                     <td>Most Minutes</td>
                     <td>47 m</td>
                 </tr>                                                                                                        
             </table>
         </section>
-    )
+    );
 }
 
 function Section2() {
     return (
         <section id="section2">
-            <h1 id ="Game Statistics" style="color: #E5DFB7">Game Statistics</h1>
+            <h1 id ="Game Statistics" style={{color: "#E5DFB7"}}>Game Statistics</h1>
             <table id="table1">
                 <tr>
                     <td colspan="5">Match Statistics</td>
                 </tr>
                 <tr>
-                    <td><img src="Photos/logos/Durban_Impalas.png" width="50" height="70" alt="icon for row" /></td>
+                    <td><img src={Logo} width="50" height="70" alt="icon for row" /></td>
                     <td><h3>IMP</h3></td>
                     <td><h3>    </h3></td>
                     <td><h3>EAG</h3></td>
-                    <td><img src="Photos/logos/Pretoria Eagles.png" width="66" height="66" alt="Pretoria Eagles" /></td>
+                    <td><img src={PretoriaEagles} width="66" height="66" alt="Pretoria Eagles" /></td>
                 </tr>
                 <tr>
                     <td><h3>84</h3></td>
@@ -90,18 +95,18 @@ function Section2() {
                 </tr>                                                                                                                                                                         
             </table>
         </section>
-    )
+    );
 }
 
 function Page4() {
     return (
-        <section className="page" id="page4" style="background-color: black">
-            <section class="fourthpagecontent" id ="Statistics">
+        <section className="page" id="page4" style={{BackgroundColor: "black"}}>
+            <section className="fourthpagecontent" id ="Statistics">
                 <Section1 />
                 <Section2 />
             </section>
         </section>
-        )
+        );
     }
 
 // ReactDOM.render(<Page4 />,document.getElementById("root"))

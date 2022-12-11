@@ -1,5 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
 import "/Users/randallholmes/Durban-Impalas/my-app./src/index.css";
 // import ImpalasLogo from 'Durban-Impalas/Images/';
 
@@ -17,8 +17,12 @@ function Head() {
   )
  }
 
-ReactDOM.render(
-  <Head />,
-  document.getElementById("head")
-);
+const container = document.getElementById("head");
 
+const root = createRoot(container);
+
+root.render(
+  <StrictMode>
+    <Head />
+  </StrictMode>
+);

@@ -1,13 +1,13 @@
 import React from "react";
 import "/Users/randallholmes/Durban-Impalas/my-app./src/index.css";
 import ReactDOM from 'react-dom/client';
-
+import Logo from "/Users/randallholmes/Durban-Impalas/my-app./src/Images/logos/Durban_Impalas.png"
 
 
 function NavigationBar() {
     return (
       <nav className='barnav'>
-            {/* <img src="Photos/logos/Durban_Impalas.png", width="66", height="66", alt="Logo"> */}
+            <img src={Logo} width="66" height="66" alt="Logo" />  
             <h3>Durban Impalas</h3>
             <a href="#About">About Us</a>    
             <a href="#Media">Media</a>
@@ -24,5 +24,6 @@ function NavigationBar() {
 //     <NavigationBar />,
 //     document.getElementById("root")
 // );
+
 
 export default NavigationBar; 

@@ -1,5 +1,4 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from "react";
 import './index.css';
 import Body from './Components/Body/Body';
 // import Footer from './Components/Footer/Footer'
@@ -8,7 +7,7 @@ import Body from './Components/Body/Body';
 function App() {
   return (
       <Body />
-  )
+  );
 }
 
 

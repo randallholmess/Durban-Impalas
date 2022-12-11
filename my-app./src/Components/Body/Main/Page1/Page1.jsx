@@ -1,15 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
 import "/Users/randallholmes/Durban-Impalas/my-app./src/index.css";
+import Player1 from "/Users/randallholmes/Durban-Impalas/my-app./src/Images/Media Content/front Page-Rugby Player.jpeg";
+import Player2 from "/Users/randallholmes/Durban-Impalas/my-app./src/Images/Media Content/front page player 2.jpeg";
 
 
 function ContactSection1() {
     return (
         <section>
-            <h3 style="color: black;">Contact Us</h3>
+            <h3 style={{color: "black"}}>Contact Us</h3>
             <p>If you would like to get in touch send us a message and we would love to get back to you!</p>
         </section>
-    )
+    );
   }
   
   function ContactSection2() {
@@ -20,19 +21,19 @@ function ContactSection1() {
         <label htmlFor="submit" name="submit">submit:</label>
         <button htmlFor="submit" class="btn">Send</button>
       </section>
-    )
+    );
   }
   
   function Policy() {
     return (
       <section>
-        <h3 style="color: black;">Policy</h3>
+        <h3 style={{color: "black"}}>Policy</h3>
         <p> Durban Impalas is committed to providing quality services to you and this policy outlines our ongoing obligations to you in respect of how we manage your Personal Information.
             We have adopted the Australian Privacy Principles (APPs) contained in the Privacy Act 1988 (Cth) (the Privacy Act). The NPPs govern the way in which we collect, use, disclose, store, secure and dispose of your Personal Information.
             A copy of the Australian Privacy Principles may be obtained from the website of The Office of the Australian Information Commissioner at www.aoic.gov.au
             </p>
       </section>
-    )
+    );
   }
   
   function Concact() {
@@ -42,7 +43,7 @@ function ContactSection1() {
         <ContactSection2 />
         <Policy />
       </section>
-    )
+    );
   }
   
 function AboutUSS() {
@@ -55,12 +56,11 @@ function AboutUSS() {
                 involved please send us a message on the contact section and we would love to know how we can help each other. </p>
         </div>
         <div id="section2">
-            {/* <img src="Photos/Media Content/front page player 2.jpeg", class="column",="500", height="500", alt="GalleryImg" > */}
-            {/* <!-- <img src="Photos/Media Content/front Page-Rugby Player.jpeg",class="column", width="500", height="500", alt="GalleryImg"> --> */}
-  
+            <img src={Player2} className="column" width="500" height="500" alt="GalleryImg"  /> 
+            <img src={Player1} className="column" width="500" height="500" alt="GalleryImg" /> 
         </div>  
       </section>
-    )
+    );
   }
   
   function Page1() {
@@ -69,7 +69,7 @@ function AboutUSS() {
         <AboutUSS />
         <Concact />
       </section>
-    )
+    );
   }
   
   // ReactDOM.render(<Page1 />, document.getElementById("root"))

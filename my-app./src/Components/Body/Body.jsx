@@ -1,6 +1,5 @@
 import React from "react";
 import "/Users/randallholmes/Durban-Impalas/my-app./src/index.css";
-import ReactDOM from 'react-dom/client';
 import Main from "./Main/Main";
 import NavigationBar from "./Navigation/NavigationBar";
 
@@ -15,9 +14,11 @@ function Body()
         );
 }
  
-ReactDOM.render(
-    <Body />,
-    document.getElementById("root")
-);
+// ReactDOM.render(
+//     <Body />,
+//     document.getElementById("root")
+// );
+
+/* <Main /> */
 
 export default Body;

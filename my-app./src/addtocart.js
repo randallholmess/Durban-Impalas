@@ -31,3 +31,6 @@ function addtocart (item) {
 function del(item) {
     document.getElementById(item).remove();
 } 
+
+
+export default addtocart
