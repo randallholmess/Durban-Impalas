@@ -9,9 +9,9 @@ import PinkT from "/Users/randallholmes/Durban-Impalas/my-app./src/Images/Media 
 function Item1() {
     return (
         <section className="contentcard" id ="item1">
-            <h3 style={{BackgroundColor:"white",color:"black"}} className="Cardtitle">Hoodie</h3>
+            <h3 style={{backgroundColor:"white",color:"black"}} className="Cardtitle">Hoodie</h3>
             <img src={Hoodie1} width="100%" height="100%" alt="icon for row" />
-            <section className="orderplacing" style={{color: "black" , BackgroundColor: "white"}}> 
+            <section className="orderplacing" style={{color: "black" , backgroundColor: "white"}}> 
                 <label htmlFor="cars">SIZE:</label>
                 <select name="S" id="Size">
                 <option value="S">S</option>
@@ -21,7 +21,7 @@ function Item1() {
                 </select>
             </section>
             <label htmlFor="add to cart" name="add to cart">add to cart:</label>
-             <button onclick= {addtocart} id="item1" style={{BackgroundColor: "white"}}>Send</button>
+             <button type="submit" onClick= {() => this.addtocart("item1")} style={{backgroundColor: "white"}}>Send</button>
         </section>
     );
 }
@@ -29,9 +29,9 @@ function Item1() {
 function Item2() {
     return (
         <section className="contentcard" id ="item2">
-            <h3 style={{BackgroundColor:"white",color:"black"}} className="Cardtitle">BlackT-Shirt</h3>
+            <h3 style={{backgroundColor:"white",color:"black"}} className="Cardtitle">BlackT-Shirt</h3>
             <img src={BlackT} width="100%" height="100%" alt="icon for row" />
-            <section className="orderplacing" style={{BackgroundColor:"white",color:"black"}}> 
+            <section className="orderplacing" style={{backgroundColor:"white",color:"black"}}> 
                 <label htmlFor="cars">SIZE:</label>
                 <select name="S" id="Size">
                     <option value="S">S</option>
@@ -41,7 +41,7 @@ function Item2() {
                 </select>
             </section>
             <label htmlFor="add to cart" name="add to cart">add to cart:</label>
-            <button onclick= {addtocart} id="item2" type="submit" className="btn" style={{BackgroundColor: "white"}}>Send</button>
+            <button type="submit" className="btn" onClick= {() => this.addtocart("item2")} style={{backgroundColor: "white"}}>Send</button>
         </section>
     );
 }
@@ -49,9 +49,9 @@ function Item2() {
 function Item3() {
     return (
         <section className="contentcard" id ="item3">
-            <h3 style={{BackgroundColor:"white",color:"black"}}className="Cardtitle">Pink T-Shirt</h3>
+            <h3 style={{backgroundColor:"white",color:"black"}}className="Cardtitle">Pink T-Shirt</h3>
             <img src={PinkT} width="100%" height="100%" alt="icon for row" />
-            <section className="orderplacing" style={{color: "black", BackgroundColor: "white"}}> 
+            <section className="orderplacing" style={{color: "black", backgroundColor: "white"}}> 
                 <label htmlFor="cars">SIZE:</label>
                 <select name="S" id="Size">
                 <option value="S">S</option>
@@ -61,14 +61,14 @@ function Item3() {
                 </select>
             </section>
             <label htmlFor="add to cart" name="add to cart">add to cart:</label>
-            <button onclick={addtocart} id="item3" type="submit" className="btn" style={{BackgroundColor: "white"}}>Send</button>
+            <button onclick={() => addtocart("item3")} type="submit" className="btn" style={{backgroundColor: "white"}}>Send</button>
         </section>
     );
 }
 
 function Page5() {
     return (
-    <section className="page" id="page5" style={{BackgroundColor: "black"}}>
+    <section className="page" id="page5" style={{backgroundColor: "black"}}>
         <h1 id="Marketplace" style={{color: "#E5DFB7" , width: "100%"}}>Marketplace</h1>
         <section className="fifthpagecontent">
             <section className ="product">
@@ -76,7 +76,7 @@ function Page5() {
                 <Item2 />
                 <Item3 />
             </section>
-            <h2 style={{textAlign: "center" , BackgroundColor: "white"}}>Cart</h2>
+            <h2 style={{textAlign: "center" , backgroundColor: "white"}}>Cart</h2>
             <div className="cart" id="cart">
                 <div id="Cardtitle"></div>
             </div>
@@ -84,7 +84,5 @@ function Page5() {
     </section>
     );
 }
-
-// ReactDOM.render(<Page5 />,document.getElementById("root"))
 
 export default Page5;

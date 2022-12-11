@@ -100,7 +100,7 @@ function Section2() {
 
 function Page4() {
     return (
-        <section className="page" id="page4" style={{BackgroundColor: "black"}}>
+        <section className="page" id="page4" style={{backgroundColor: "black"}}>
             <section className="fourthpagecontent" id ="Statistics">
                 <Section1 />
                 <Section2 />

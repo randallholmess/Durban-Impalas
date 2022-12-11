@@ -104,18 +104,14 @@ function Section2() {
                         </tr>  
                     </table>
                 </section>
+                <section>
+                    <iframe width="300" height="200" src="https://embed.windy.com/embed2.html?lat=-18.288&lon=146.158&detailLat=-27.468&detailLon=153.033&width=650&height=450&zoom=5&level=surface&overlay=clouds&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1" frameborder="0"></iframe> 
+                </section>
         </section>
         
     );
 }
 
-function Widget() {
-    return (
-        <section>
-            <iframe width="300" height="200" src="https://embed.windy.com/embed2.html?lat=-18.288&lon=146.158&detailLat=-27.468&detailLon=153.033&width=650&height=450&zoom=5&level=surface&overlay=clouds&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1" frameborder="0"></iframe> 
-        </section>
-    );
-}
 
 function Page3() {
     return (
@@ -123,7 +119,6 @@ function Page3() {
         <section className="thirdpagecontent" id="Standings/Game Score">
             <Section1 />
             <Section2 />
-            <Widget />
         </section>
     </section>
 

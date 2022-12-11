@@ -57,7 +57,6 @@ function AboutUSS() {
         </div>
         <div id="section2">
             <img src={Player2} className="column" width="500" height="500" alt="GalleryImg"  /> 
-            <img src={Player1} className="column" width="500" height="500" alt="GalleryImg" /> 
         </div>  
       </section>
     );

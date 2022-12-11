@@ -5,7 +5,7 @@ import "/Users/randallholmes/Durban-Impalas/my-app./src/index.css";
 
 function Head() {
   return (
-    <head>
+    <div>
         <title> Durban Impalas</title>
         <meta charset="UTF-8" />
         <meta name="Description" content="Single Page Application(SPA) for the durban native rugby team. For access for public and clients" />
@@ -13,8 +13,8 @@ function Head() {
         <meta name="Author" content="Randall Holmes" />
         <link rel="stylesheet" type="text/css" href="index.css" />
         <script type="text/javascript" src="/Users/randallholmes/Durban-Impalas/my-app./src/index.js"></script>
-    </head>
-  )
+    </div>
+  );
  }
 
 const container = document.getElementById("head");
