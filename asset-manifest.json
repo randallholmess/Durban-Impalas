@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/Durban-Impalas/static/css/main.3b1666fe.css",
+    "main.js": "/Durban-Impalas/static/js/main.894d194c.js",
+    "static/media/Tshirt.webp": "/Durban-Impalas/static/media/Tshirt.eb85a34e24b2fb81082f.webp",
+    "static/media/hoodie.webp": "/Durban-Impalas/static/media/hoodie.064adefbee0cda93ac8a.webp",
+    "static/media/Neuzeit Grotesk W01 Regular.otf": "/Durban-Impalas/static/media/Neuzeit Grotesk W01 Regular.825a65296c253785a253.otf",
+    "static/media/Durban_Impalas.png": "/Durban-Impalas/static/media/Durban_Impalas.f299a66d70ee10ac047a.png",
+    "static/media/Neuzeit Grotesk Cond W01 Black.otf": "/Durban-Impalas/static/media/Neuzeit Grotesk Cond W01 Black.7a6749697571e7206218.otf",
+    "static/media/Stellenbosch Wilderbeast.png": "/Durban-Impalas/static/media/Stellenbosch Wilderbeast.d50c218467175204ab40.png",
+    "static/media/Pretoria Eagles.png": "/Durban-Impalas/static/media/Pretoria Eagles.cc539426680aa1dbeaa0.png",
+    "static/media/East London Imperials.png": "/Durban-Impalas/static/media/East London Imperials.66468885ca54e0569a6f.png",
+    "static/media/player infront of mic.jpeg": "/Durban-Impalas/static/media/player infront of mic.6e172198ede1258000ba.jpeg",
+    "static/media/Pretoria Wildbacks.png": "/Durban-Impalas/static/media/Pretoria Wildbacks.fb2a21cdf53c54478996.png",
+    "static/media/tshirt 2.webp": "/Durban-Impalas/static/media/tshirt 2.1a1db69106360a23f48c.webp",
+    "static/media/NeuzeitSBook.ttf": "/Durban-Impalas/static/media/NeuzeitSBook.7f3913539885ba66f9ee.ttf",
+    "static/media/Granjon.otf": "/Durban-Impalas/static/media/Granjon.85e3a1013c86ce6e66d1.otf",
+    "static/media/images.jpeg": "/Durban-Impalas/static/media/images.9f14407432cc40762c01.jpeg",
+    "static/media/download (1).jpeg": "/Durban-Impalas/static/media/download (1).c302f49b8852cdcd402d.jpeg",
+    "index.html": "/Durban-Impalas/index.html",
+    "main.3b1666fe.css.map": "/Durban-Impalas/static/css/main.3b1666fe.css.map",
+    "main.894d194c.js.map": "/Durban-Impalas/static/js/main.894d194c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3b1666fe.css",
+    "static/js/main.894d194c.js"
+  ]
+}
