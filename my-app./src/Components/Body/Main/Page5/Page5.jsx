@@ -6,7 +6,7 @@ import BlackT from "/Users/randallholmes/Durban-Impalas/my-app./src/Images/Media
 import PinkT from "/Users/randallholmes/Durban-Impalas/my-app./src/Images/Media Content/Shop/tshirt 2.webp";
 
 
-
+// There are three items within the marketplace section below each of the given items is created in a function
 function Item1() {
     return (
         <section className="contentcard" id ="item1">
@@ -66,6 +66,8 @@ function Item3() {
         </section>
     );
 }
+
+// Curates all the items and creates a marketplace page for the website.
 
 function Page5() {
     return (

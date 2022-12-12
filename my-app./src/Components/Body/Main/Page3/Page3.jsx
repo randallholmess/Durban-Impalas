@@ -110,6 +110,4 @@ function Page3() {
 }
 
 
-// ReactDOM.render(<Page3 />,document.getElementById("root"))
-
 export default Page3;

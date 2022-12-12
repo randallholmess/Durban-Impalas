@@ -5,6 +5,8 @@ import NavigationBar from "./Navigation/NavigationBar";
 import Footer from "../Footer/Footer";
 
 
+//Main Function that creates the content of all Components in the website.
+
 function Body() 
 {
     return(
@@ -16,11 +18,5 @@ function Body()
         );
 }
  
-// ReactDOM.render(
-//     <Body />,
-//     document.getElementById("root")
-// );
-
-/* <Main /> */
 
 export default Body;

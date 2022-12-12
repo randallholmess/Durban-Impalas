@@ -7,6 +7,7 @@ import MurrayDuglas from "/Users/randallholmes/Durban-Impalas/my-app./src/Images
 import TomBanks from "/Users/randallholmes/Durban-Impalas/my-app./src/Images/Media Content/Players/Tom Banks.jpeg"
 import PretoriaEagles from "/Users/randallholmes/Durban-Impalas/my-app./src/Images/logos/Pretoria Eagles.png";
 
+// Section 1 is the left half of page 5 that displays the player statistics
 
 function Section1() {
     return (
@@ -48,6 +49,8 @@ function Section1() {
     );
 }
 
+
+// Section 2 Part that displays the game statistics
 function Section2() {
     return (
         <section id="section2">
@@ -98,6 +101,8 @@ function Section2() {
     );
 }
 
+
+// Main function that joins the two parts together to one main page.
 function Page4() {
     return (
         <section className="page" id="page4" style={{backgroundColor: "black"}}>
@@ -109,6 +114,5 @@ function Page4() {
         );
     }
 
-// ReactDOM.render(<Page4 />,document.getElementById("root"))
 
 export default Page4;

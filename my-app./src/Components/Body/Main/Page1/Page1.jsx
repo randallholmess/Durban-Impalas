@@ -3,6 +3,7 @@ import "/Users/randallholmes/Durban-Impalas/my-app./src/index.css";
 import Player2 from "/Users/randallholmes/Durban-Impalas/my-app./src/Images/Media Content/front page player 2.jpeg";
 
 
+//Function that displays A part of the Section within page 1 that displays a message to contact and informs what for.
 
 function ContactSection1() {
     return (
@@ -13,7 +14,8 @@ function ContactSection1() {
     );
   }
 
-  // Error Handling Making sure email entered is valid and contains a @ sign
+
+// Error handling that make sure email entered is valid and contains a @ sign. Displays a pop up sign alert with a message.
 
 function validEmail()
 {
@@ -30,7 +32,7 @@ var email = "@";
   }
 }
  
-// Using a Hook to display a message after actions are completed in the form.
+// Function to that displays the form of the contact section. Function uses a hook UseState to display a message after actions are completed in the form. 
 
 
   function ContactSection2() {
@@ -49,6 +51,9 @@ var email = "@";
     );
   }
   
+
+//Third section displays another section of the page that displays the policy of the Website.
+
   function Policy() {
     return (
       <section>
@@ -61,6 +66,8 @@ var email = "@";
     );
   }
   
+// All parts that have been created in the top sections condensed down into a function that will display the bottom part of the contact section in Page 1
+
   function Concact() {
     return (
       <section className="contactinfo" name="About" id="About" method="Post">
@@ -70,6 +77,8 @@ var email = "@";
       </section>
     );
   }
+
+// Top half of page 1 that shows the main content in the About Us section with image provided.
   
 function AboutUSS() {
     return (
@@ -87,6 +96,9 @@ function AboutUSS() {
     );
   }
   
+// Function Page 1 curates all the functions above into two main parts About US and Contact sections and creates page 1
+
+
   function Page1() {
     return (
       <section className="page" id="page1">
@@ -95,7 +107,5 @@ function AboutUSS() {
       </section>
     );
   }
-  
-  // ReactDOM.render(<Page1 />, document.getElementById("root"))
 
   export default Page1;

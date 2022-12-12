@@ -3,6 +3,9 @@ import "/Users/randallholmes/Durban-Impalas/my-app./src/index.css";
 import Logo from "/Users/randallholmes/Durban-Impalas/my-app./src/Images/logos/Durban_Impalas.png"
 
 
+
+// Create the top navigation bar of the webpage.
+
 function NavigationBar() {
     return (
       <nav className='barnav'>

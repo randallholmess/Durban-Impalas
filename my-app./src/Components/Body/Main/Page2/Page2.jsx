@@ -5,6 +5,8 @@ import Image2 from "/Users/randallholmes/Durban-Impalas/my-app./src/Images/Media
 import Image3 from "/Users/randallholmes/Durban-Impalas/my-app./src/Images/Media Content/media_section/download (1).jpeg";
 
 
+// Page 2 is the Media Section of the Website that displays youtube and image content.
+
 function Page2() {
     return (
         <section className="page" id="page2">
@@ -13,7 +15,7 @@ function Page2() {
                         <h1>Media</h1>
                     </div>
                     <div className="gallery" id="section2">
-                        <iframe src="https://www.youtube.com/embed/PT_YZW8NTBY" class="img-1x2" alt="img-1x1"></iframe>
+                        <iframe src="https://www.youtube.com/embed/PT_YZW8NTBY" class="img-1x2" alt="img-1x1" title="youtube video"></iframe>
                         <img src={Image1} class="img-1x1"  alt="img-1x1" />
                         <img src={Image2}  class="img-1x1" alt="img-1x1" />
                         <img src={Image3} class="img-1x1" alt="img-1x1" />

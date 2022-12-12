@@ -7,7 +7,7 @@ import Page4 from "./Page4/Page4";
 import Page5 from "./Page5/Page5";
 
 
-
+// Main function that exports the main sectional data of each page
 function Main() 
 {
     return(
@@ -21,14 +21,5 @@ function Main()
         );
 }
  
-// ReactDOM.render(
-//     <Main />,
-//     document.getElementById("root")
-// );
-
-/* <Page2 />
-<Page3 />
-<Page4 />
-<Page5 /> */
 
 export default Main;
