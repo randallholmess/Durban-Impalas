@@ -1,6 +1,11 @@
 var additemId = 0;
 
-function addtocart (item) {
+export function del(item) {
+    document.getElementById(item).remove();
+} 
+
+
+export function addtocart (item) {
     additemId += 1;
 
     var selectedItem = document.createElement('div');
@@ -18,7 +23,7 @@ function addtocart (item) {
     label.append(select);
     var delBtn = document.createElement('button');
     delBtn.innerText = 'Delete:';
-    delBtn.setAttribute('onclick','del('+additemId+')');
+    delBtn.setAttribute('onClick','del('+additemId+')');
     var cartitems = document.getElementById('Cardtitle');
     selectedItem.append(img);    
     selectedItem.append(title);
@@ -26,10 +31,5 @@ function addtocart (item) {
     selectedItem.append(delBtn);
     cartitems.append(selectedItem);
 
+
 }
-
-function del(item) {
-    document.getElementById(item).remove();
-} 
-
-export default addtocart

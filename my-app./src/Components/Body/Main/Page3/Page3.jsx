@@ -4,104 +4,88 @@ import PretoriaWildbacks from "/Users/randallholmes/Durban-Impalas/my-app./src/I
 import EastLondonImperials from "/Users/randallholmes/Durban-Impalas/my-app./src/Images/logos/East London Imperials.png";
 import StellenboschWilderbeast from "/Users/randallholmes/Durban-Impalas/my-app./src/Images/logos/Stellenbosch Wilderbeast.png";
 import PretoriaEagles from "/Users/randallholmes/Durban-Impalas/my-app./src/Images/logos/Pretoria Eagles.png";
+import { create, all } from 'mathjs'
+const math = create(all,  {})
 
+
+// this Class is set to help with the Standings table of different teams, consisting of its Image,Name,Wins,Draws,losses, and place, It is a higher-order component, used to simplify
+// the table data
+class Standings extends React.Component {
+    constructor(props) {
+      super(props);
+    }
+    render() {
+      return  <tr>
+                <td><img src={this.props.Image} width="66" height="66" alt={this.props.Name} /></td>
+                <td>{this.props.Name}</td>
+                <td>{this.props.Wins}</td>
+                <td>{this.props.Draws}</td>
+                <td>{this.props.Losses}</td>
+                <td>{this.props.Place}</td>
+            </tr>;
+    }
+  }
+
+// Section1 Which displays the standings is a function which populates the table of standings and uses the class standings to populate data"
 function Section1() {
     return (
         <section class = "section1">
         <h1  style={{color: "#E5DFB7"}}>Standings</h1>
         <table>
-            <tr>
-                <td><img src={PretoriaWildbacks} width="66" height="66" alt="Pretoria Wildbacks" /></td>
-                <td>Pretoria Wildbacks</td>
-                <td>16</td>
-                <td>2</td>
-                <td>2</td>
-                <td>1st Place</td>
-            </tr>
-            <tr>
-                <td><img src={EastLondonImperials} width="66" height="66" alt="East London Imperials" /></td>
-                <td>East London Imperials</td>
-                <td>14</td>
-                <td>4</td>
-                <td>0</td>
-                <td>2nd Place</td>
-            </tr>
-            <tr>
-                <td><img src={StellenboschWilderbeast} width="66" height="66" alt="Stellenbosch Wilderbeast" /></td>
-                <td>Stellenbosch Wilderbeast</td>
-                <td>9</td>
-                <td>6</td>
-                <td>5</td>
-                <td>third Place</td>
-            </tr>
-            <tr>
-                <td><img src={PretoriaEagles} width="66" height="66" alt="Pretoria Eagles" /></td>
-                <td>Pretoria Eagles</td>
-                <td>7</td>
-                <td>9</td>
-                <td>4</td>
-                <td>4th Place</td>
-            </tr>                                                                                                            
+            <Standings Image={PretoriaWildbacks} Name="Pretoria Wildbacks" Wins="16" Draws="2" Losses="2" Place="1st Place"/>
+            <Standings Image={EastLondonImperials} Name="East London Imperials" Wins="14" Draws="4" Losses="0" Place="2nd Place"/>
+            <Standings Image={StellenboschWilderbeast} Name="Stellenbosch Wilderbeast" Wins="9" Draws="6" Losses="5" Place="3rd Place"/>
+            <Standings Image={PretoriaEagles} Name="Pretoria Eagles" Wins="7" Draws="9" Losses="4" Place="4th Place"/>                                                                                       
         </table>
     </section>
     );
 }
 
+// A third party app math is used to get random scores for the teams so each time app is opened it is randomly populated
+const ScoreValue =  (arrlength,Values) => Array.from({length: arrlength}, () => math.randomInt(0,Values));
+// const ScoreValue =[math.randomInt(0,35),math.randomInt(0,35),math.randomInt(0,35),math.randomInt(0,35),math.randomInt(0,35),math.randomInt(0,35),math.randomInt(0,35),math.randomInt(0,35)]
 
+
+// Similar to the Standings class this is a class used for the scores on a table with the different teams, consisting of its Image,Name and scores It is a higher-order component, used to simplify
+// the table data of the Standings
+class Score extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+    render() {
+        return  <tr>
+                    <td><img src={this.props.Image} width="66" height="66" alt={this.props.Name} /></td>
+                    <td>{this.props.Name}</td>
+                    <td>{this.props.Score}</td>
+                </tr>;
+    }
+    }
+
+
+// Section2 Which displays the Scores table  is a function which populates the table of standings and using the class score to populate data"
+ 
 function Section2() {
     return (
         <section id="section2">
             <h1 id ="Games" style={{color: "#E5DFB7"}}>Game Score</h1>
             <section id="firstrow">
                 <table id="table1">
-                    <tr>
-                        <td><img src={PretoriaWildbacks} width="66" height="66" alt="Pretoria Wildbacks" /></td>
-                        <td>Pretoria Wildbacks</td>
-                        <td>16</td>
-                    </tr>
-                    <tr>
-                        <td><img src={StellenboschWilderbeast} width="66" height="66" alt="Stellenbosch Wilderbeast" /></td>
-                        <td>Stellenbosch Wilderbeast</td>
-                        <td>9</td>
-                    </tr>  
+                    <Score Image={PretoriaWildbacks} Name="Pretoria Wildbacks" Score={ScoreValue(10,35)[0]} />
+                    <Score Image={StellenboschWilderbeast} Name="Stellenbosch Wilderbeast" Score={ScoreValue(10,35)[1]}/>
                 </table>
                 <table id="table2">
-                    <tr>
-                        <td><img src={PretoriaEagles} width="66" height="66" alt="Pretoria Eagles" /></td>
-                        <td>Pretoria Eagles</td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td><img src={StellenboschWilderbeast} width="66" height="66" alt="Stellenbosch Wilderbeast" /></td>
-                        <td>Stellenbosch Wilderbeast</td>
-                        <td>9</td>
-                    </tr>  
+                    <Score Image={PretoriaEagles} Name="Pretoria Eagles" Score={ScoreValue(10,35)[2]} />
+                    <Score Image={StellenboschWilderbeast} Name="Stellenbosch Wilderbeast" Score={ScoreValue(10,35)[3]} />  
                 </table>
             </section>
             <section id="secondrow">
                     <table id="table1">
-                        <tr>
-                            <td><img src={EastLondonImperials} width="66" height="66" alt="East London Imperials" /></td>
-                            <td>East London Imperials</td>
-                            <td>14</td>
-                        </tr>
-                        <tr>
-                            <td><img src={StellenboschWilderbeast} width="66" height="66" alt="Stellenbosch Wilderbeast" /></td>
-                            <td>Stellenbosch Wilderbeast</td>
-                            <td>16</td>
-                        </tr>  
+                        <Score Image={EastLondonImperials} Name="East London Imperials" Score={ScoreValue(10,35)[4]} />
+                        <Score Image={StellenboschWilderbeast} Name="Stellenbosch Wilderbeast" Score={ScoreValue(10,35)[5]}/>
                     </table>
                     <table id="table2">
-                        <tr>
-                            <td><img src={PretoriaWildbacks} width="66" height="66" alt="Pretoria Wildbacks" /></td>
-                            <td>Pretoria Wildbacks</td>
-                            <td>16</td>
-                        </tr>
-                        <tr>
-                            <td><img src={PretoriaEagles} width="66" height="66" alt="Pretoria Eagles" /></td>
-                            <td>Pretoria Eagles</td>
-                            <td>7</td>
-                        </tr>  
+                        <Score Image={PretoriaWildbacks} Name="Pretoria Wildbacks" Score={ScoreValue(10,35)[6]} />
+                        <Score Image={PretoriaEagles} Name="Pretoria Eagles" Score={ScoreValue(10,35)[7]} />  
                     </table>
                 </section>
                 <section>
@@ -112,7 +96,7 @@ function Section2() {
     );
 }
 
-
+// Main function which Displays the Third Page containing all the data above.
 function Page3() {
     return (
     <section className="page" id="page3" style={{backgroundColor: "black"}} >
@@ -124,6 +108,7 @@ function Page3() {
 
     );
 }
+
 
 // ReactDOM.render(<Page3 />,document.getElementById("root"))
 

@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "/Users/randallholmes/Durban-Impalas/my-app./src/index.css";
-import Player1 from "/Users/randallholmes/Durban-Impalas/my-app./src/Images/Media Content/front Page-Rugby Player.jpeg";
 import Player2 from "/Users/randallholmes/Durban-Impalas/my-app./src/Images/Media Content/front page player 2.jpeg";
+
 
 
 function ContactSection1() {
@@ -12,14 +12,39 @@ function ContactSection1() {
         </section>
     );
   }
-  
+
+  // Error Handling Making sure email entered is valid and contains a @ sign
+
+function validEmail()
+{
+var mail = document.getElementById('mail').value; // where `mail` is id of your input form
+var email = "@";
+
+  if (mail.match(email))
+  {
+      alert("Your Email : " + mail + ' has been Sent');
+  }
+  else
+  {
+      alert("Invalid Email !!!");
+  }
+}
+ 
+// Using a Hook to display a message after actions are completed in the form.
+
+
   function ContactSection2() {
+    const [item, Sent] = useState("Nothing");
     return (
       <section className='section2'>
         <label htmlFor="message"  name="message">message:</label>
         <textarea></textarea>
         <label htmlFor="submit" name="submit">submit:</label>
-        <button htmlFor="submit" class="btn">Send</button>
+        <button htmlFor="submit" class="btn" onClick={() => Sent("Message")}>Send</button>
+        <textarea id="mail"></textarea>
+        <label htmlFor="submit" name="submit" >YourEmail:</label>
+        <button htmlFor="submit" class="btn" onClick={function() { validEmail(); Sent("Email"); }}>Send</button>
+        <h4>{item} Has Been Sent!</h4>
       </section>
     );
   }

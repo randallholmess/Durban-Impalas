@@ -1,9 +1,10 @@
 import React from "react";
 import "/Users/randallholmes/Durban-Impalas/my-app./src/index.css";
-import addtocart from "/Users/randallholmes/Durban-Impalas/my-app./src/addtocart.js"
+import {addtocart} from "/Users/randallholmes/Durban-Impalas/my-app./src/addtocart.js"
 import Hoodie1 from "/Users/randallholmes/Durban-Impalas/my-app./src/Images/Media Content/Shop/hoodie.webp";
 import BlackT from "/Users/randallholmes/Durban-Impalas/my-app./src/Images/Media Content/Shop/Tshirt.webp";
 import PinkT from "/Users/randallholmes/Durban-Impalas/my-app./src/Images/Media Content/Shop/tshirt 2.webp";
+
 
 
 function Item1() {
@@ -21,7 +22,7 @@ function Item1() {
                 </select>
             </section>
             <label htmlFor="add to cart" name="add to cart">add to cart:</label>
-             <button type="submit" onClick= {() => this.addtocart("item1")} style={{backgroundColor: "white"}}>Send</button>
+             <button type="submit" id="item1" onClick= {() => addtocart(document.getElementById("item1"))}  style={{backgroundColor: "white"}}>Send</button>
         </section>
     );
 }
@@ -41,7 +42,7 @@ function Item2() {
                 </select>
             </section>
             <label htmlFor="add to cart" name="add to cart">add to cart:</label>
-            <button type="submit" className="btn" onClick= {() => this.addtocart("item2")} style={{backgroundColor: "white"}}>Send</button>
+            <button type="submit" className="btn" onClick= {() => addtocart(document.getElementById("item2"))} style={{backgroundColor: "white"}}>Send</button>
         </section>
     );
 }
@@ -61,7 +62,7 @@ function Item3() {
                 </select>
             </section>
             <label htmlFor="add to cart" name="add to cart">add to cart:</label>
-            <button onclick={() => addtocart("item3")} type="submit" className="btn" style={{backgroundColor: "white"}}>Send</button>
+            <button type="submit" onClick={() => addtocart(document.getElementById("item3"))}  className="btn" style={{backgroundColor: "white"}}>Send</button>
         </section>
     );
 }
@@ -78,7 +79,9 @@ function Page5() {
             </section>
             <h2 style={{textAlign: "center" , backgroundColor: "white"}}>Cart</h2>
             <div className="cart" id="cart">
-                <div id="Cardtitle"></div>
+                <div id="Cardtitle">
+                <script type="module" src="/Users/randallholmes/Durban-Impalas/my-app./src/addtocart.js"></script>
+                </div>
             </div>
         </section>
     </section>
